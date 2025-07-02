@@ -12,7 +12,7 @@ export default async function handler(req, res) {
       Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
     },
     body: JSON.stringify({
-      prompt: `High-quality photo of: ${prompt}`,
+     prompt: `Food photography of a plated dish: ${prompt}. Studio lighting, restaurant presentation, realistic.`,
       n: 1,
       size: "512x512",
     }),
